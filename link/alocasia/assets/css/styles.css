@@ -1,0 +1,190 @@
+html {
+font-size: 20px;
+font-family: 'Akaya Telivigala', serif;
+}
+body {
+background: url("../img/background/155471219_2555331888104867_7294828396204442530_n.jpg") fixed;
+}
+header {
+text-align: center;
+height: auto;
+margin: auto;
+}
+hr {
+border: none;
+border: double rgba(0,0,0);
+text-align: center;
+height: 5px;
+}
+nav {
+text-align: center;
+}
+.title {
+font-size: 60px;
+font-weight: bold;
+color: rgba(0,0,0);
+text-shadow: 3px 3px 3px rgb(255,255,255);
+}
+.subtitle {
+font-size: 45px;
+font-weight: bold;
+color: rgba(0,0,0);
+text-shadow: 3px 3px 3px rgb(255,255,255);
+}
+caption {
+font-size: 50px; 
+color: rgb(154, 205, 50);
+background: chocolate;
+border-radius: 50%;
+text-shadow: 3px 3px 3px rgba(0,0,0);
+width: 400px;
+margin: auto;
+}
+table {
+width: 75%;
+margin: auto;
+border-collapse: collapse;  
+text-align: center;
+border: 10px double rgba(0,0,0);
+background:  rgb(127,255,212);
+}
+th {
+border: 2px solid rgba(0,0,0);
+font-size: 25px;
+} 
+td {
+border: 1px solid rgba(0,0,0);
+font-size: 25px;
+} 
+td:nth-child(2){
+font-size: 20px;
+}
+td:nth-child(3){
+font-size: 20px;
+}
+td:nth-child(4){
+font-size: 20px;  
+}
+td:nth-child(5){
+font-size: 20px;
+}
+tbody {
+border-left: 2px solid rgba(0,0,0);
+border-right: 2px solid rgba(0,0,0);
+border-bottom: 2px solid rgba(0,0,0);
+}
+button {
+font-size: 30px;
+font-family: 'Pangolin';
+font-weight: bold;
+line-height: 1.8;
+width: auto;     
+}
+.styledbutton {
+background-color: rgb(154, 205, 50);
+border-radius: 50%;       
+box-shadow: inset -2px -2px 3px rgba(0,0,0);            
+}  
+.styledbutton:hover  {
+background-color: rgb(253, 18, 3);
+} 
+.styledbutton:active {
+background-color: rgb(0, 0, 255);
+}
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 50px;
+    }
+    .subtitle {
+        font-size: 25px;
+    }
+    thead, tbody, th, td, tr { 
+        display: block;
+    }
+    thead {
+        position: absolute;
+        top: -9999px;
+        right: -9999px;
+    }
+    td:nth-of-type(2):before {
+        content: "Exposition: ";
+        font-weight: bold;
+    }
+    td:nth-of-type(3):before {
+        content: "Arrosage: ";
+        font-weight: bold;
+    }
+    td:nth-of-type(4):before {
+        content: "Rempotage: ";
+        font-weight: bold;
+    }
+    td:nth-of-type(5):before {
+        content: "Saisons: ";
+        font-weight: bold;
+    } 
+}
+
+
+
+
+
+    .contenu_carou_auto{
+    margin:2rem auto;
+    width:480px;
+    height:640px;
+    perspective:8000px
+    }
+            
+    .caroussel-image{    
+    animation:rotation 24s infinite alternate linear;	
+    transform-style:preserve-3d;
+    position:relative;	
+    }
+    
+    .caroussel-image img{    
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px;
+    }
+
+    .caroussel-image img{   
+    filter:drop-shadow(16px 16px 10px black);
+    width: 480px;
+    height: 640px;
+    backface-visibility: hidden;
+    }
+    .caroussel-image img:nth-child(1){
+    transform:translate3d(0,0,738px);
+    }            
+    .caroussel-image img:nth-child(2){
+    transform:rotateY(36deg) translateZ(738px);
+    }            
+    .caroussel-image img:nth-child(3){
+    transform:rotateY(72deg) translateZ(738px);
+    }       
+    .caroussel-image img:nth-child(4){
+    transform:rotateY(108deg) translateZ(738px);
+    }        
+    .caroussel-image img:nth-child(5){
+    transform:rotateY(144deg) translateZ(738px);
+    }        
+    .caroussel-image img:nth-child(6){
+    transform:rotateY(180deg) translateZ(738px);
+    }    
+    .caroussel-image img:nth-child(7){
+    transform:rotateY(216deg) translateZ(738px);
+    }
+    .caroussel-image img:nth-child(8){
+    transform:rotateY(252deg) translateZ(738px);
+    }   
+    .caroussel-image img:nth-child(9){
+    transform:rotateY(288deg) translateZ(738px);    
+    }
+    .caroussel-image img:nth-child(10){
+    transform:rotateY(324deg) translateZ(738px);    
+    }
+    @keyframes rotation{
+    from{transform:rotatey(0)}
+    to{transform:rotatey(1turn)}}
+        

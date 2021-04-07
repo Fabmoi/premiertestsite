@@ -1,0 +1,263 @@
+html {
+font-size: 20px;
+font-family: 'Akaya Telivigala', serif;
+}
+body {
+background: url("../img/background/144380939_224283069407850_2838247670587100060_n.jpg") fixed;
+}
+header {
+text-align: center;
+height: auto;
+margin: auto;
+}
+hr {
+border: none;
+border: double rgba(0,0,0);
+text-align: center;
+height: 5px;
+}
+nav {
+text-align: center;
+}
+.title {
+font-size: 60px;
+font-weight: bold;
+color: rgba(0,0,0);
+text-shadow: 3px 3px 3px rgb(255,255,255);
+}
+.subtitle {
+font-size: 45px;
+font-weight: bold;
+color: rgba(0,0,0);
+text-shadow: 3px 3px 3px rgb(255,255,255);
+}
+caption {
+font-size: 50px; 
+color: rgb(154, 205, 50);
+background: chocolate;
+border-radius: 50%;
+text-shadow: 3px 3px 3px rgba(0,0,0);
+width: 400px;
+margin: auto;
+}
+table {
+width: 75%;
+margin: auto;
+border-collapse: collapse;  
+text-align: center;
+border: 10px double rgba(0,0,0);
+background:  rgb(127,255,212);
+}
+th {
+border: 2px solid rgba(0,0,0);
+font-size: 25px;
+} 
+td {
+border: 1px solid rgba(0,0,0);
+font-size: 25px;
+} 
+td:nth-child(2){
+font-size: 20px;
+}
+td:nth-child(3){
+font-size: 20px;
+}
+td:nth-child(4){
+font-size: 20px;  
+}
+td:nth-child(5){
+font-size: 20px;
+}
+tbody {
+border-left: 2px solid rgba(0,0,0);
+border-right: 2px solid rgba(0,0,0);
+border-bottom: 2px solid rgba(0,0,0);
+}
+button {
+font-size: 30px;
+font-family: 'Pangolin';
+font-weight: bold;
+line-height: 1.8;
+width: auto;     
+}
+.styledbutton {
+background-color: rgb(154, 205, 50);
+border-radius: 50%;       
+box-shadow: inset -2px -2px 3px rgba(0,0,0);            
+}  
+.styledbutton:hover  {
+background-color: rgb(253, 18, 3);
+} 
+.styledbutton:active {
+background-color: rgb(0, 0, 255);
+}
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 50px;
+    }
+    .subtitle {
+        font-size: 25px;
+    }
+    thead, tbody, th, td, tr { 
+        display: block;
+    }
+    thead {
+        position: absolute;
+        top: -9999px;
+        right: -9999px;
+    }
+    td:nth-of-type(2):before {
+        content: "Exposition: ";
+        font-weight: bold;
+    }
+    td:nth-of-type(3):before {
+        content: "Arrosage: ";
+        font-weight: bold;
+    }
+    td:nth-of-type(4):before {
+        content: "Rempotage: ";
+        font-weight: bold;
+    }
+    td:nth-of-type(5):before {
+        content: "Saisons: ";
+        font-weight: bold;
+    } 
+}
+
+
+.slideshow{
+    border: 5px solid rgba(0,0,0);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 480px;
+    height: 640px;
+    margin: 40px auto;
+    position: relative;
+    }  
+    .slideshow ul{
+    margin: auto;
+    list-style-type: none;
+    position: relative;
+    }      
+    .slideshow li{
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+
+    -moz-animation-name: slideshow;
+    -moz-animation-duration: 50s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease;
+
+    -o-animation-name: slideshow;
+    -o-animation-duration: 50s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: ease;
+
+    -ms-animation-name: slideshow;
+    -ms-animation-duration: 50s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: ease;
+
+    -webkit-animation-name: slideshow;
+    -webkit-animation-duration: 50s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+
+    animation-name: slideshow;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+
+    }
+    .slideshow li:nth-child(1){
+        animation-delay: 0s;
+    }
+    .slideshow li:nth-child(2){
+        animation-delay: 5s
+    }
+    .slideshow li:nth-child(3){
+        animation-delay: 10s
+    }
+    .slideshow li:nth-child(4){
+        animation-delay: 15s
+    }
+    .slideshow li:nth-child(5){
+        animation-delay: 20s
+    }
+    .slideshow li:nth-child(6){
+        animation-delay: 25s;
+    }
+    .slideshow li:nth-child(7){
+        animation-delay: 30s;
+    }
+    .slideshow li:nth-child(8){
+        animation-delay: 35s;
+    }
+    .slideshow li:nth-child(9){
+        animation-delay: 40s;
+    }
+    .slideshow li:nth-child(10){
+        animation-delay: 45s;
+    }   
+    @keyframes slideshow{    
+        0%   {opacity: 0}
+        10%  {opacity: 1}
+        20%  {opacity: 1}
+        25%  {opacity: 0}
+        100% {opacity: 0}
+        }     
+    .slideshow span{
+    background: rgba(0,0,0,0.7);
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    }   
+    .barre_progression{    
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    height: 5px;
+    background: rgb(255, 255, 255);
+
+    -moz-animation-name: barre_progression;
+    -moz-animation-duration: 25s;
+    -moz-animation-timing-function: ease-out; 
+    -moz-animation-iteration-count: infinite; 
+    
+    -o-animation-name: barre_progression;
+    -o-animation-duration: 25s;
+    -o-animation-timing-function: ease-out; 
+    -o-animation-iteration-count: infinite;  
+
+    -ms-animation-name: barre_progression;
+    -ms-animation-duration: 25s;
+    -ms-animation-timing-function: ease-out; 
+    -ms-animation-iteration-count: infinite;  
+
+    -webkit-animation-name: barre_progression;
+    -webkit-animation-duration: 25s;
+    -webkit-animation-timing-function: ease-out; 
+    -webkit-animation-iteration-count: infinite;  
+
+    animation-name: barre_progression;
+    animation-duration: 25s;
+    animation-timing-function: ease-out; 
+    animation-iteration-count: infinite;  
+    }     
+    
+    @keyframes barre_progression{    
+    0%,20%,40%,60%,80%,100%          {width: 0%;opacity: 0}    
+    4%,24%,44%,64%,84%               {width: 0%;opacity: .3}    
+    16%,36%,56%,76%,96%              {width: 100%;opacity: .7}    
+    17%,37%,57%,77%,97%              {width: 100%;opacity: .3}    
+    18%,38%,58%,78%,98%              {width: 100%;opacity: 0}
+    }  
+    
